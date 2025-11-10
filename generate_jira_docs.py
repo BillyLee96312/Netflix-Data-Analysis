@@ -9,7 +9,7 @@ import json
 # Open your Jira in a browser.
 # The URL in the address bar is your <JIRA_BASE_URL>
 # Example:
-#text
+# text
 # https://yourcompany.atlassian.net
 # Replace <JIRA_BASE_URL> with https://yourcompany.atlassian.net.
 #
@@ -17,10 +17,10 @@ import json
 # What it is: Your Jira login email.
 # Where to find it:
 # In Jira, go to your profile:
-# Click your avatar in the top right ?†’ Profile.
 # Click your avatar in the top right ¡æ Profile.
 # Click your avatar in the top right ¡æ Profile.
-# Click your avatar in the top right ?†’ Profile.
+# Click your avatar in the top right ¡æ Profile.
+# Click your avatar in the top right ¡æ Profile.
 # The email displayed here is your <JIRA_USERNAME>.
 # Replace <JIRA_USERNAME> with your email, e.g.,
 # text
@@ -30,14 +30,14 @@ import json
 # What it is: A personal access token to authenticate API calls.
 # How to generate:
 # Log into your Jira account.
-# Click your avatar ?†’ Account Settings.
-# Navigate to Security ?†’ Create API token.
 # Click your avatar ¡æ Account Settings.
 # Navigate to Security ¡æ Create API token.
 # Click your avatar ¡æ Account Settings.
 # Navigate to Security ¡æ Create API token.
-# Click your avatar ?†’ Account Settings.
-# Navigate to Security ?†’ Create API token.
+# Click your avatar ¡æ Account Settings.
+# Navigate to Security ¡æ Create API token.
+# Click your avatar ¡æ Account Settings.
+# Navigate to Security ¡æ Create API token.
 # Enter a label (e.g., "Scripts Access").
 # Click Create.
 # Copy and save the generated token securely.
