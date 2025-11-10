@@ -1,0 +1,39 @@
+name: Jira Documentation Sync
+
+on:
+#  schedule:
+#    - cron: '11 53 * * *'   # Runs daily at midnight UTC
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install requirements
+      run: pip install requests
+
+    - name: Run Python script to generate Jira docs
+      env:
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+        JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+        JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+      run: |
+        python generate_jira_docs.py
+
+    - name: Commit generated docs
+      run: |
+        git config --global user.name "Auto Jira Doc Bot"
+        git config --global user.email "billylee96312@gmail.com"
+        git add docs/
+        git commit -m "Update Jira issues documentation"
+        git push origin main
