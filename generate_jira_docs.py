@@ -32,6 +32,7 @@ def fetch_issues():
         }
         response = requests.get(JIRA_API_URL, params=params, auth=auth)
         data = response.json()
+        print(json.dumps(data, indent=4))
         issues.extend(data['issues'])
         if data['total'] <= start + max_results:
             break
