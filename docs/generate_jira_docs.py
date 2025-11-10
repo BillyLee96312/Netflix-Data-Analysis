@@ -17,7 +17,11 @@ import json
 # What it is: Your Jira login email.
 # Where to find it:
 # In Jira, go to your profile:
-# Click your avatar in the top right â†’ Profile.
+<<<<<<< HEAD
+# Click your avatar in the top right ?†’ Profile.
+=======
+# Click your avatar in the top right ¡æ Profile.
+>>>>>>> 19ca840 (Resolve merge conflicts before pushing)
 # The email displayed here is your <JIRA_USERNAME>.
 # Replace <JIRA_USERNAME> with your email, e.g.,
 # text
@@ -27,8 +31,13 @@ import json
 # What it is: A personal access token to authenticate API calls.
 # How to generate:
 # Log into your Jira account.
-# Click your avatar â†’ Account Settings.
-# Navigate to Security â†’ Create API token.
+<<<<<<< HEAD
+# Click your avatar ?†’ Account Settings.
+# Navigate to Security ?†’ Create API token.
+=======
+# Click your avatar ¡æ Account Settings.
+# Navigate to Security ¡æ Create API token.
+>>>>>>> 19ca840 (Resolve merge conflicts before pushing)
 # Enter a label (e.g., "Scripts Access").
 # Click Create.
 # Copy and save the generated token securely.
@@ -64,9 +73,8 @@ import json
   
 
 
-
-JIRA_BASE_URL = 'https://BillyLee96312.atlassian.net'
-JIRA_USERNAME = 'BillyLee96312@gmail.com'
+JIRA_BASE_URL = 'https://billylee96312.atlassian.net'
+JIRA_USERNAME = 'billylee96312@gmail.com'
 JIRA_API_TOKEN = 'ATATT3xFfGF0WkmZqfzMIuUJyx7G5F09W7z9fKkaQq7UloZAAQZNJZA2Ocfqb3L3oC62YgOmmG4mZzQBcGEPei1zitYNy3BiNZpKSb63sPVzFFK5ColHyKhG0Kt7ktpdiwkbjwE7q_VodWGmz1O_liw5lyl8kYejjUznFDSp6TRASoibgLVkor0=92AAD907' # Until Nov 10, 2026
 JIRA_PROJECT_KEY = 'PSFDAODPT-22'  # e.g., 'ABC'
 GITHUB_REPO_PATH = 'D:\Project\Python & SQL on Databricks for Data Analytics - Pro Track\source codes\Netflix-Data-Analysis\Netflix-Data-Analysis\docs'  # local folder for docs
@@ -77,7 +85,7 @@ auth = (JIRA_USERNAME, JIRA_API_TOKEN)
 # Jira API endpoint for issues in a project (expand as needed)
 JIRA_API_URL = f"{JIRA_BASE_URL}/rest/api/3/search"
 
-# JQL query to fetch all issues in project (including epics, stories, subtasks)
+# JQL query to fetch all issues in project (including epics, stories, subtasks) 
 JQL = f"project={JIRA_PROJECT_KEY}"
 
 # Fetch issues from Jira
