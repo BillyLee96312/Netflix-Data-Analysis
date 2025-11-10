@@ -1,8 +1,8 @@
 name: Jira Documentation Sync
 
 on:
-  schedule:
-    - cron: '11 53 * * *'   # Runs daily at midnight UTC
+#  schedule:
+#    - cron: '11 53 * * *'   # Runs daily at midnight UTC
   push:
     branches:
       - main
