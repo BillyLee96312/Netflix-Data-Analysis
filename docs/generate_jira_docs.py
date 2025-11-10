@@ -17,7 +17,11 @@ import json
 # What it is: Your Jira login email.
 # Where to find it:
 # In Jira, go to your profile:
+<<<<<<< HEAD
 # Click your avatar in the top right ¡æ Profile.
+=======
+# Click your avatar in the top right â†’ Profile.
+>>>>>>> origin/main
 # The email displayed here is your <JIRA_USERNAME>.
 # Replace <JIRA_USERNAME> with your email, e.g.,
 # text
@@ -27,8 +31,13 @@ import json
 # What it is: A personal access token to authenticate API calls.
 # How to generate:
 # Log into your Jira account.
+<<<<<<< HEAD
 # Click your avatar ¡æ Account Settings.
 # Navigate to Security ¡æ Create API token.
+=======
+# Click your avatar â†’ Account Settings.
+# Navigate to Security â†’ Create API token.
+>>>>>>> origin/main
 # Enter a label (e.g., "Scripts Access").
 # Click Create.
 # Copy and save the generated token securely.
