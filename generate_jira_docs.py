@@ -28,10 +28,22 @@ def fetch_issues():
             'jql': JQL,
             'startAt': start,
             'maxResults': max_results,
-            'fields': 'summary,description,issuetype,epic,subtasks,customfield_10011'  # add custom fields as needed
+            'fields': 'summary,description,issuetype,epic,subtasks',  # add custom fields as needed
+            'maxResults': 50
         }
         response = requests.get(JIRA_API_URL, params=params, auth=auth)
+        if response.status_code != 200:
+            print(f"Error fetching issues: {response.status_code}")
+            print("Response:", response.text)
+            return []
+
         data = response.json()
+        if 'issues' not in data:
+            print("No 'issues' key in response. Check your Jira API query.")
+            return []
+        # Debugging output
+        print("Fetched issues:")
+        
         print(json.dumps(data, indent=4))
         issues.extend(data['issues'])
         if data['total'] <= start + max_results:
