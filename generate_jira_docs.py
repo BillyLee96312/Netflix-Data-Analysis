@@ -22,7 +22,7 @@ JQL = f"project={JIRA_PROJECT_KEY}"
 def fetch_issues():
     issues = []
     start = 0
-    max_results = 50
+    max_results = 60
     while True:
         params = {
             'jql': JQL,
@@ -43,7 +43,7 @@ def fetch_issues():
             return []
         # Debugging output
         print("Fetched issues:")
-        
+
         print(json.dumps(data, indent=4))
         issues.extend(data['issues'])
         if data['total'] <= start + max_results:
