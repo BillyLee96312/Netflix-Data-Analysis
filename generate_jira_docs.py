@@ -22,7 +22,7 @@ JQL = f"project={JIRA_PROJECT_KEY}"
 def fetch_issues():
     issues = []
     start = 0
-    max_results = 60
+    max_results = 50
     while True:
         params = {
             'jql': JQL,
