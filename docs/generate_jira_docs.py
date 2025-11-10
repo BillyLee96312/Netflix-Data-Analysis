@@ -18,10 +18,17 @@ import json
 # Where to find it:
 # In Jira, go to your profile:
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Click your avatar in the top right ?†’ Profile.
 =======
 # Click your avatar in the top right ¡æ Profile.
 >>>>>>> 19ca840 (Resolve merge conflicts before pushing)
+=======
+# Click your avatar in the top right ¡æ Profile.
+=======
+# Click your avatar in the top right â†’ Profile.
+>>>>>>> origin/main
+>>>>>>> e5fbd5aed9fde746ea5f9d075408586abd3daba1
 # The email displayed here is your <JIRA_USERNAME>.
 # Replace <JIRA_USERNAME> with your email, e.g.,
 # text
@@ -32,12 +39,21 @@ import json
 # How to generate:
 # Log into your Jira account.
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Click your avatar ?†’ Account Settings.
 # Navigate to Security ?†’ Create API token.
 =======
 # Click your avatar ¡æ Account Settings.
 # Navigate to Security ¡æ Create API token.
 >>>>>>> 19ca840 (Resolve merge conflicts before pushing)
+=======
+# Click your avatar ¡æ Account Settings.
+# Navigate to Security ¡æ Create API token.
+=======
+# Click your avatar â†’ Account Settings.
+# Navigate to Security â†’ Create API token.
+>>>>>>> origin/main
+>>>>>>> e5fbd5aed9fde746ea5f9d075408586abd3daba1
 # Enter a label (e.g., "Scripts Access").
 # Click Create.
 # Copy and save the generated token securely.
