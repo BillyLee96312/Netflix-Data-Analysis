@@ -7,7 +7,7 @@ JIRA_BASE_URL = 'https://billylee96312.atlassian.net'
 JIRA_USERNAME = 'billylee96312@gmail.com'
 JIRA_API_TOKEN = 'ATATT3xFfGF0WkmZqfzMIuUJyx7G5F09W7z9fKkaQq7UloZAAQZNJZA2Ocfqb3L3oC62YgOmmG4mZzQBcGEPei1zitYNy3BiNZpKSb63sPVzFFK5ColHyKhG0Kt7ktpdiwkbjwE7q_VodWGmz1O_liw5lyl8kYejjUznFDSp6TRASoibgLVkor0=92AAD907' # Until Nov 10, 2026
 JIRA_PROJECT_KEY = 'PSFDAODPT-22'  # e.g., 'ABC'
-GITHUB_REPO_PATH = 'D:\Project\Python & SQL on Databricks for Data Analytics - Pro Track\source codes\Netflix-Data-Analysis\Netflix-Data-Analysis\docs'  # local folder for docs
+GITHUB_REPO_PATH = r'D:\Project\Python & SQL on Databricks for Data Analytics - Pro Track\source codes\Netflix-Data-Analysis\Netflix-Data-Analysis\docs'  # local folder for docs
 
 # Basic Auth for Jira API
 auth = (JIRA_USERNAME, JIRA_API_TOKEN)
