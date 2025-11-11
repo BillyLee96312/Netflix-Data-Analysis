@@ -2,6 +2,8 @@ import requests
 import os
 import json
 
+print("Current directory:", os.getcwd())
+print("Files in docs:", os.listdir('docs/'))
 
 JIRA_BASE_URL = 'https://billylee96312.atlassian.net'
 JIRA_USERNAME = 'billylee96312@gmail.com'

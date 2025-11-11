@@ -30,13 +30,16 @@ jobs:
       run: |
         python generate_jira_docs.py
 
-    - name: List docs directory contents
-      run: ls -al docs/
+
 
     - name: Commit generated docs
       run: |
         git config --global user.name "Auto Jira Doc Bot"
         git config --global user.email "billylee96312@gmail.com"
+    - name: List docs directory contents
+      run: ls -al docs/        
+    - name: Commit generated docs
+      run: |
         git add docs/
         git commit -m "Update Jira issues documentation"
         git push origin main
